@@ -45,7 +45,7 @@ pipeline {
 		stage('Running Ansible Playbook') {
 			steps {
 				ansiblePlaybook(
-				playbook: '${WORKSPACE}/agent.improve_network_performance.yaml',
+				playbook: '${WORKSPACE}/improve_network_performance.yaml',
 				inventory: '${WORKSPACE}/inventory.ini',
 				colorized: true,
 				extras: '-vv -f 30 --ssh-extra-args=" -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"',
