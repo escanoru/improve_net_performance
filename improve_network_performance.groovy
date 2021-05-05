@@ -16,7 +16,7 @@ pipeline {
    parameters {
         string(
 		name: 'Target_Host', 
-		description: '<h5>Target host where this adjusments will take place</h5>'
+		description: '<h5>Target host where these adjusments will take place</h5>'
 		)
 		password(
 		name: 'Host_Password', 
